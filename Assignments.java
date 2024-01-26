@@ -1,34 +1,69 @@
-package day2;
+package day3;
+
+import java.util.*;
 
 public class Assignments {
 
 	public static void main(String[] args) {
 		
-		System.out.println("1) WAP to print Hello on screen an the print your name on seperate line : Hello your_name");
+		System.out.println("1) WAP in java to display the multiplication table of 5");
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println("5 X "+i+" = "+(i*5));
+		}
 		
-		String s ="Tanay";
-		System.out.println("Hello "+s);
+		System.out.println("------------------------------------------------------------");
 		
-		System.out.println("---------------------------------------------------");
+		System.out.println("2) WAP to find greatest of 3 numbers");
 		
-		System.out.println("2) WAP to print sum of two numbers");
+		int a = 7;
+		int b = 17;
+		int c = 30;
 		
-		int a = 20;
-		int b =10;
-		System.out.println("Sum of "+a+" and "+b+" :"+(a+b));
-
-		System.out.println("---------------------------------------------------");
+		if(a>b && a>c)
+		{
+			System.out.println(a+" is greater then "+b+" and "+c);
+		}
+		else if(b>a && b>c)
+		{
+			System.out.println(b+" is greater then "+a+" and "+c);
+		}
+		else if(c>a && c>b)
+		{
+			System.out.println(c+" is greater then "+a+" and "+b);
+		}
+		else
+		{
+			System.out.println("all are equal");
+		}
 		
-		System.out.println("3) WAP to swap two numbers");
+		System.out.println("------------------------------------------------------------");
 		
-		int x = 30;
-		int y = 40;
-		System.out.println("Before Swapping x="+x+" , y="+y);
-		int c = x;
-		 x = y;
-		 y = c;
-		 System.out.println("After Swapping x="+x+" , y="+y);
-		 
+		System.out.println("3) WAP to get input from user ");
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter sometihng :");
+		String userInput = sc.nextLine();
+		System.out.println("You Entered :"+userInput);
+		
+		
+		System.out.println("------------------------------------------------------------");
+		
+		System.out.println("4) WAP to find number is positive or negative");
+		
+		int g = 10;
+		if(g<0)
+		{
+			System.out.println("Number is negative");
+			
+		}
+		else
+		{
+			System.out.println("Number is positive");
+		}
+		
+		
+		
 		
 	}
 
